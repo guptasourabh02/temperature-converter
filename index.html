@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temperature Converter</title>
+  <link rel="stylesheet" type="text/css" href="./css/temp-converter.css">
+  <script type="text/javascript" src="./js/temp-converter.js"></script>
+</head>
+  
+<body>
+	<div class="container">
+		<h3>Temperature Converter</h3>
+		<form id="temperature-converter">
+			<label>Celsius</label>
+			<input id="celsius" type="number" step="any" oninput="celsiusConverter()" onChange="celsiusConverter()">
+			<label>Fahrenheit</label>
+			<input id="fahrenheit" type="number" step="any" oninput="fahrenheitConverter()" onChange="fahrenheitConverter()">
+			<label>Kelvin</label>
+			<input id="kelvin" type="number" step="any" oninput="kelvinConverter()" onChange="kelvinConverter()">
+			<input class="reset-button" onclick="resetValues()" value="Reset" readonly>
+		</form>
+	</div>
+</body>
+
+</html>
+	
